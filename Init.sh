@@ -10,6 +10,8 @@ then
 	echo "generation de la page d'exemple ..."
 
 	# Soit executer code qui fait page exemple, soit rien faire
+	
+	/usr/sbin/apache2ctl -DFOREGROUND
 
 	exit 0
 fi
