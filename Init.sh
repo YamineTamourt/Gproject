@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Entrer le lien de la playlist pour generer la page (vide pour generer la page d'exemple"
+echo "Entrer le lien de la playlist pour generer la page (vide pour generer la page d'exemple)"
 
 read lien
 
