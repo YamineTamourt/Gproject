@@ -14,7 +14,7 @@ do
     fi
   done < file.txt
   
-  ligne=$ligne"\t"$(youtude-de --get-filename $video)
+  ligne=$ligne"\t"$(youtude-dl --get-filename $video)
   
   echo ${ligne:1}
 done
