@@ -16,7 +16,7 @@ public class GenerateurHtml
 
 		try
 		{	
-			pw = new PrintWriter ( new File ( "/var/www/html/index.html"), "utf-8" );
+			pw = new PrintWriter ( new File ( "index.html"), "utf-8" );
 		}	
 		catch (Exception e){e.printStackTrace();}
 
