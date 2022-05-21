@@ -27,8 +27,8 @@ else
 	echo "generation de la page ..."
 	
 	
-	javac /root/GenerateurData.java
-	javac /root/GenerateurHtml.java
+	javac /var/www/html/GenerateurData.java
+	javac /var/www/html/GenerateurHtml.java
 	
 	java root/GenerateurData
 	java root/GenerateurHtml
