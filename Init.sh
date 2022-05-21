@@ -26,11 +26,10 @@ else
 	
 	echo "generation de la page ..."
 	
-	
-	javac /var/www/html/GenerateurData.java
+	chmod +rm GenererData.sh
 	javac /var/www/html/GenerateurHtml.java
 	
-	java var/www/html/GenerateurData
+	./GenererData.sh $lien
 	java var/www/html/GenerateurHtml
 fi
 
