@@ -17,7 +17,7 @@ ENV LC_ALL C.UTF-8
 
 COPY ./Init.sh /root/
 COPY ./html /var/www/html
-COPY ./java /root
+COPY ./java /var/www/html
 
 EXPOSE 80
 
