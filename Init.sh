@@ -29,4 +29,6 @@ else
 	youtube-dl -o '/var/www/html/video/%(uploader)s/%(upload_date)s/%(title)s' $lien
 fi
 
+/usr/sbin/apache2ctl -DFOREGROUND
+
 exit 0
