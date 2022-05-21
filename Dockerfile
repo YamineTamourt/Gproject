@@ -7,7 +7,8 @@ RUN apt-get update && \
     wget \
     python \
     locales \
-    default-jdk
+    default-jdk \
+    jq
 
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 RUN chmod +rx /usr/local/bin/youtube-dl
