@@ -1,5 +1,7 @@
 "!/bin/bash
 
+rm video.data
+
 for video in $(youtube-dl -j --flat-playlist $1 | jq -r '.id' | sed 's_^_https://youtu.be/_')
 do
   youtube-dl -J $video  | jq '{"date": .upload_date,"title": .title,"author": .uploader,"description": .description, "null"}' | grep ":" > file.txt
@@ -16,5 +18,7 @@ do
   
   ligne=$ligne"\t"$(youtude-dl --get-filename $video)
   
-  echo ${ligne:1}
+  echo -e ${ligne:2} >> video.data
 done
+
+exit 0
