@@ -7,8 +7,6 @@ read lien
 if [[ -z $lien ]]
 then
 	echo "generation de la page d'exemple ..."
-
-	# Soit executer code qui fait page exemple, soit rien faire
 	
 	/usr/sbin/apache2ctl -DFOREGROUND
 
@@ -21,12 +19,9 @@ if [ $? -ne 0 ]
 then
 	echo "lien invalide"
 	echo "generation de la page d'exemple ..."
-
-	# Soit executer code qui fait page exemple, soit rien faire
 else
 	echo "telechargement de la playlist ..."
 
-	# Executer le telechargement et les fichiers java
 	youtube-dl -o '/var/www/html/video/%(uploader)s/%(upload_date)s/%(title)s' $lien
 	
 	echo "generation de la page ..."
