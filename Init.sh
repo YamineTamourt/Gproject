@@ -26,7 +26,7 @@ else
 	
 	echo "generation de la page ..."
 	
-	javac java/*.java
+	javac *.java
 
 	
 	java GenerateurData
