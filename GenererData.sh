@@ -6,7 +6,10 @@ do
   
   while IFS=: read name data
   do
-    echo ${data:2:${#data}-4}
+    if [ "$data" != " null" ]
+    then
+      echo ${data:2:${#data}-4}
+    fi
   done < file.txt
   
   youtude-de --get-filename $video
