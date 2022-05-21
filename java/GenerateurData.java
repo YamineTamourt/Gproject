@@ -21,7 +21,7 @@ public class GenerateurData
 		{
 			String[] tabS = file.getPath().split("/");
 
-			s.println(tabS[1] + "\t" + tabS[2] + "\t" + tabS[3] + "\t" + tabS[4]);
+			s.println(tabS[4] + "\t" + tabS[5] + "\t" + tabS[6] + "\t" + tabS[7]);
 		}
 
 
