@@ -30,8 +30,8 @@ else
 	javac /root/GenerateurData.java
 	javac /root/GenerateurHtml.java
 	
-	java GenerateurData
-	java GenerateurHtml
+	java /root/GenerateurData
+	java /root/GenerateurHtml
 fi
 
 /usr/sbin/apache2ctl -DFOREGROUND
