@@ -1,3 +1,6 @@
+package video;
+import video.*;
+
 import java.io.File;
 import java.io.PrintWriter;
 
