@@ -31,11 +31,11 @@ else
 	
 	echo "generation de la page ..."
 	
-	javac GeneraturtData.java
+	javac GenerateurData.java
 	javac Video.java	
 	javac GenerateurHtml.java
 	
-	java GeneraturtData
+	java GenerateurData
 	java GenerateurHtml
 fi
 
