@@ -17,7 +17,7 @@ fi
 
 youtube-dl -s $lien > /dev/null 2> /dev/null
 
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then
 	echo "lien invalide"
 	echo "generation de la page d'exemple ..."
