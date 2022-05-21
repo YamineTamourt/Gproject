@@ -26,9 +26,8 @@ else
 	
 	echo "generation de la page ..."
 	
-	javac GenerateurData.java
-	javac Video.java	
-	javac GenerateurHtml.java
+	javac java/*.java
+
 	
 	java GenerateurData
 	java GenerateurHtml
