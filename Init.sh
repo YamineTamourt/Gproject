@@ -4,7 +4,6 @@ echo "Entrer le lien de la playlist pour generer la page (vide pour generer la p
 
 read lien
 
-
 if [[ -z $lien ]]
 then
 	echo "generation de la page d'exemple ..."
@@ -29,6 +28,12 @@ else
 
 	# Executer le telechargement et les fichiers java
 	youtube-dl -o '/var/www/html/video/%(uploader)s/%(upload_date)s/%(title)s' $lien
+	
+	echo "generation de la page ..."
+	
+	javac *.java
+	java GeneraturtData
+	java GenerateurHtml
 fi
 
 /usr/sbin/apache2ctl -DFOREGROUND
