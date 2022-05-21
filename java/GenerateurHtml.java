@@ -47,7 +47,7 @@ public class GenerateurHtml
 
 			pw.println ( "\t\t\t\t<td> " + v.getTitre() + " </td>" );
 
-			pw.println ( "\t\t\t\t<td rowspan=\"7\"> <video> <source src=\"video" + v.getAuteur() + "/" + v.getDate() + "/" + v.getTitre() + "" + v.getFichier() + " type=\"video/mp4\"> </video> </td>" );
+			pw.println ( "\t\t\t\t<td rowspan=\"7\"> <video> <source src=\"video" + v.getAuteur() + "/" + v.getDate() + "/" + v.getTitre() + "/" + v.getFichier() + "\" type=\"video/mp4\"> </video> </td>" );
 		
 			pw.println ( "\t\t\t\t<td colspan=\"3\">" + v.getAuteur()  +"                       " + v.getDate() + " </td>" );
 
