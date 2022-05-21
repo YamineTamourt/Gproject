@@ -29,7 +29,7 @@ public class GenerateurData
 	{
 		GenerateurData ex = new GenerateurData();
 
-		File dir = new File("video");
+		File dir = new File("/var/www/html/video");
 
 		String s = "";
 
