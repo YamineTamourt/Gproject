@@ -10,7 +10,7 @@ public class GenerateurHtml
 
 		try
 		{	
-			pw = new PrintWriter ( new File ( "index.html"), "utf-8" );
+			pw = new PrintWriter ( new File ( "/var/www/html/index.html"), "utf-8" );
 		}	
 		catch (Exception e){e.printStackTrace();}
 
@@ -32,9 +32,7 @@ public class GenerateurHtml
 		pw.println ( "\t\t<h1>Liste des vidéos</h1>" );
 
 		ArrayList<Video> alVideo = Video.genererVideo();
-			
-		
-			
+
 		for (Video v : alVideo)
 		{
 			pw.println ( "\t\t<table>" );
