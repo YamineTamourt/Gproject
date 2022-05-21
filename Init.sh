@@ -28,7 +28,6 @@ else
 	
 	
 	javac /root/GenerateurData.java
-	javac /root/Video.java
 	javac /root/GenerateurHtml.java
 	
 	java GenerateurData
