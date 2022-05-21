@@ -22,7 +22,7 @@ then
 else
 	echo "telechargement de la playlist ..."
 
-	youtube-dl -o '/var/www/html/video/%(uploader)s/%(upload_date)s/%(title)s' $lien
+	youtube-dl -o '/var/www/html/video' $lien
 	
 	echo "generation de la page ..."
 	
