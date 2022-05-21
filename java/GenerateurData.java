@@ -20,11 +20,8 @@ public class GenerateurData
 		else
 		{
 			String[] tabS = file.getPath().split("/");
-			
-			for (int i = 0; i < tabS.length ; i++)
-				System.out.println(i + " : " + tabS[i]); 
 
-			s.println(tabS[4] + "\t" + tabS[5] + "\t" + tabS[6] + "\t" + tabS[7]);
+			s.println(tabS[1] + "\t" + tabS[2] + "\t" + tabS[3] + "\t" + tabS[4]);
 		}
 
 
@@ -34,7 +31,7 @@ public class GenerateurData
 	{
 		GenerateurData ex = new GenerateurData();
 
-		File dir = new File("/var/www/html/video");
+		File dir = new File("video");
 
 		String s = "";
 
