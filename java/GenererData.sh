@@ -16,7 +16,7 @@ do
     fi
   done < file.txt
   
-  ligne=$ligne"\t"$(youtube-dl --get-filename $video)
+  ligne=$ligne"\t"$(youtube-dl --get-filename --recode-video mp4 $video)
   
   echo -e ${ligne:2} >> video.data
 done
