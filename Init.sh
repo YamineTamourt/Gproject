@@ -35,6 +35,6 @@ else
 	java GenerateurHtml
 fi
 
-/usr/sbin/apache2ctl -DFOREGROUND
+# /usr/sbin/apache2ctl -DFOREGROUND
 
 exit 0
