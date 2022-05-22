@@ -1,12 +1,15 @@
 #!/bin/bash
 
-echo "Entrer le lien de la playlist pour generer la page (vide pour generer la page d'exemple)"
+echo "Entrer le lien de la playlist/video pour generer la page (vide pour generer la page d'exemple)"
+echo ""
 
 read lien
 
 if [[ -z $lien ]]
 then
+	echo ""
 	echo "generation de la page d'exemple ..."
+	echo ""
 	
 	/usr/sbin/apache2ctl -DFOREGROUND
 
@@ -17,10 +20,14 @@ youtube-dl -s $lien > /dev/null 2> /dev/null
 
 if [ $? -ne 0 ]
 then
+	echo ""
 	echo "lien invalide"
 	echo "generation de la page d'exemple ..."
+	echo ""
 else
-	echo "telechargement de la playlist ..."
+	echo ""
+	echo "telechargement de la playlist/video ..."
+	echo ""
 	
 	mkdir /var/www/html/video
 	
@@ -29,6 +36,7 @@ else
 	youtube-dl $lien
 	
 	echo "generation de la page ..."
+	echo ""
 	
 	cd /var/www/html
 	
@@ -39,6 +47,6 @@ else
 	java GenerateurHtml
 fi
 
-# /usr/sbin/apache2ctl -DFOREGROUND
+/usr/sbin/apache2ctl -DFOREGROUND
 
 exit 0
