@@ -32,7 +32,7 @@ else
 	javac GenerateurHtml.java
 	
 	./GenererData.sh $lien
-	java var/www/html/GenerateurHtml
+	java GenerateurHtml
 fi
 
 /usr/sbin/apache2ctl -DFOREGROUND
