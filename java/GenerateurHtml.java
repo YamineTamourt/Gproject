@@ -65,7 +65,7 @@ public class GenerateurHtml
 			// pied de page avec prise en compte du singulier et pluriel
 		pw.println ( "\t\t<footer>" );
 		
-		pw.println ( "\t\t\t<br> fait par moi en légende");
+		pw.println ( "\t\t\t<br> Projet SaE 2.03");
 			
 		pw.println ( "\t\t</footer>" );
 
