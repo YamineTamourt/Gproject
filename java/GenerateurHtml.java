@@ -130,8 +130,10 @@ class Video
 			while ( sc.hasNextLine() )
 			{
 				String[] tabS = sc.nextLine().split("\t");
+				
+				String date = tabS[0].substring(6, 8) + "/" + tabS[0].substring(4, 6) + "/" + tabS[0].substring(0, 4);
 
-				alVideo.add( new Video(tabS[0], tabS[1], tabS[2], tabS[3], tabS[4]) );
+				alVideo.add( new Video(date, tabS[1], tabS[2], tabS[3], tabS[4]) );
 			}
 		}catch (Exception e){ e.printStackTrace(); }
 
