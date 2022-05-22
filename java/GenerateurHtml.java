@@ -1,5 +1,3 @@
-package var.www.html;
-
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.io.File;
@@ -47,9 +45,11 @@ public class GenerateurHtml
 
 			pw.println ( "\t\t\t\t<td> " + v.getTitre() + " </td>" );
 
-			pw.println ( "\t\t\t\t<td rowspan=\"7\"> <video> <source src=\"video" + v.getAuteur() + "/" + v.getDate() + "/" + v.getTitre() + "/" + v.getFichier() + "\" type=\"video/mp4\"> </video> </td>" );
+			pw.println ( "\t\t\t\t<td rowspan=\"7\"> <video> <source src=\"video/" + v.getFichier() + "\" type=\"video/mp4\"> </video> </td>" );
 		
 			pw.println ( "\t\t\t\t<td colspan=\"3\">" + v.getAuteur()  +"                       " + v.getDate() + " </td>" );
+
+			pw.println ( "\t\t\t\t<td colspan=\"3\">" + v.getDescription() + " </td>" );
 
 			pw.println ( "\t\t\t</tr>" );
 
@@ -79,22 +79,19 @@ public class GenerateurHtml
 
 class Video
 {
-	private String auteur;
 	private String date;
 	private String titre;
+	private String auteur;
+	private String description;
 	private String fichier;
 
-	public Video(String auteur, String date, String titre, String fichier)
+	public Video(String date, String titre, String auteur, String description, String fichier)
 	{
-		this.auteur  = auteur;
-		this.date    = date;
-		this.titre   = titre;
-		this.fichier = fichier;
-	}
-
-	public String getAuteur()
-	{
-		return this.auteur;
+		this.date        = date;
+		this.titre       = titre;
+		this.description = description;
+		this.auteur      = auteur;
+		this.fichier     = fichier;
 	}
 
 	public String getDate()
@@ -105,6 +102,16 @@ class Video
 	public String getTitre()
 	{
 		return this.titre;
+	}
+
+	public String getAuteur()
+	{
+		return this.auteur;
+	}
+
+	public String getDescription()
+	{
+		return this.description;
 	}
 
 	public String getFichier()
@@ -124,11 +131,10 @@ class Video
 			{
 				String[] tabS = sc.nextLine().split("\t");
 
-				alVideo.add( new Video(tabS[0], tabS[1], tabS[2], tabS[3]) );
+				alVideo.add( new Video(tabS[0], tabS[1], tabS[2], tabS[3], tabS[4]) );
 			}
 		}catch (Exception e){ e.printStackTrace(); }
 
 		return alVideo;
 	}
 }
-
