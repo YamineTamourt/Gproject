@@ -26,8 +26,10 @@ else
 	
 	echo "generation de la page ..."
 	
+	cd /var/www/html
+	
 	chmod +rx GenererData.sh
-	javac /var/www/html/GenerateurHtml.java
+	javac GenerateurHtml.java
 	
 	./GenererData.sh $lien
 	java var/www/html/GenerateurHtml
