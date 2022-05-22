@@ -22,6 +22,8 @@ then
 else
 	echo "telechargement de la playlist ..."
 	
+	mkdir /var/www/html/video
+	
 	cd /var/www/html/video
 
 	youtube-dl $lien
