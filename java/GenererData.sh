@@ -16,7 +16,7 @@ do
     fi
   done < file.txt
   
-  ligne=$ligne"\t"$(youtude-dl --get-filename $video)
+  ligne=$ligne"\t"$(youtube-dl --get-filename $video)
   
   echo -e ${ligne:2} >> video.data
 done
