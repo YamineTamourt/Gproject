@@ -23,4 +23,4 @@ COPY ./java /var/www/html
 EXPOSE 80
 
 RUN chmod +x /root/Init.sh
-CMD ["/bin/bash", "/root/Init.sh"]
+CMD ["/bin/sh", "/root/Init.sh"]
