@@ -21,8 +21,10 @@ then
 	echo "generation de la page d'exemple ..."
 else
 	echo "telechargement de la playlist ..."
+	
+	cd /var/www/html/video
 
-	youtube-dl -o '/var/www/html/video' $lien
+	youtube-dl $lien
 	
 	echo "generation de la page ..."
 	
