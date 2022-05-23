@@ -44,12 +44,24 @@ public class GenerateurHtml
 			pw.println ( "\t\t\t<tr>" );
 
 			pw.println ( "\t\t\t\t<td> " + v.getTitre() + " </td>" );
+			
+			pw.println ( "\t\t\t</tr>" );
+			
+			pw.println ( "\t\t\t<tr>" );
 
-			pw.println ( "\t\t\t\t<td rowspan=\"7\"> <video width=\"320\" height=\"240\" controls> <source src=\"video/" + v.getFichier() + "\" type=\"video/mp4\"> </video> </td>" );
+			pw.println ( "\t\t\t\t<td> <video width=\"320\" height=\"240\" controls> <source src=\"video/" + v.getFichier() + "\" type=\"video/mp4\"> </video> </td>" );
 		
-			pw.println ( "\t\t\t\t<td colspan=\"3\">" + v.getAuteur()  +"                       " + v.getDate() + " </td>" );
+			pw.println ( "\t\t\t</tr>" );
+			
+			pw.println ( "\t\t\t<tr>" );
+			
+			pw.println ( "\t\t\t\t<td> Made by " + v.getAuteur()  +"                       " + v.getDate() + " </td>" );
 
-			pw.println ( "\t\t\t\t<td colspan=\"3\">" + v.getDescription() + " </td>" );
+			pw.println ( "\t\t\t</tr>" );
+			
+			pw.println ( "\t\t\t<tr>" );
+			
+			pw.println ( "\t\t\t\t<td>" + v.getDescription() + " </td>" );
 
 			pw.println ( "\t\t\t</tr>" );
 
