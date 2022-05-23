@@ -51,7 +51,7 @@ public class GenerateurHtml
 			
 			pw.println ( "\t\t\t<tr>" );
 
-			pw.println ( "\t\t\t\t<td> <video width=\"500\" height=\"240\" controls> <source src=\"video/" + v.getFichier() + "\" type=\"video/mp4\"> </video> </td>" );
+			pw.println ( "\t\t\t\t<td> <video width=\"1000\" height=\"400\" controls> <source src=\"video/" + v.getFichier() + "\" type=\"video/mp4\"> </video> </td>" );
 		
 			pw.println ( "\t\t\t</tr>" );
 			
