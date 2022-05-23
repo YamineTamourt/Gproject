@@ -18,7 +18,7 @@ do
   
   ligne=$ligne"\t"$(youtube-dl --get-filename $video)
   
-  ligne=${ligne:0:${#ligne}-5}
+  ligne=${ligne%.*}
   ligne=$ligne".mp4"
   
   echo -e ${ligne:2} >> video.data
