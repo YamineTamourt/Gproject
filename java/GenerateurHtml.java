@@ -34,6 +34,8 @@ public class GenerateurHtml
 
 			// titre
 		pw.println ( "\t\t<h1>Liste des vidéos</h1>" );
+		
+		pw.println ( "\t\t<br>" );
 
 		ArrayList<Video> alVideo = Video.genererVideo();
 
