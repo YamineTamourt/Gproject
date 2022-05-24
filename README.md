@@ -5,7 +5,7 @@
 git clone git@github.com:YamineTamourt/legende
 ```
 
-- Aller au répositoire :
+- Aller au répertoire :
 ```shell
 cd Gproject
 ```
