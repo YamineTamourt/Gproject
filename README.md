@@ -19,7 +19,7 @@ docker build -t legende .
 docker run -it -p 8000:8096 legende
 ```
 
-- Copier le lien de la video ou playlist youtube à télécharger et qui sera dans la médaithèque, ou ne rien mettre pour obtenir la médiathèque d'exemple
+- Copier le lien de la video ou playlist youtube à télécharger et qui sera dans la médaithèque, ou ne rien mettre pour obtenir la médiathèque d'exemple :
 
 ```
 Entrer le lien de la playlist/video (vide pour generer la playlist d'exemple)
