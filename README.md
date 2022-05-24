@@ -2,7 +2,7 @@
 
 - Cloner le référentiel :
 ```shell
-git clone git@github.com:YamineTamourt/legende
+git clone git@github.com:YamineTamourt/Gproject.git
 ```
 
 - Aller au répertoire :
@@ -12,11 +12,11 @@ cd Gproject
 
 - Construction du conteneur :
 ```
-docker build -t legende .
+docker build -t Gproject .
 ```
 - Lancer le service :
 ```
-docker run -it -p 8000:8096 legende
+docker run -it -p 8000:80 Gproject
 ```
 
 - Copier le lien de la video ou playlist youtube à télécharger et qui sera dans la médaithèque, ou ne rien mettre pour obtenir la médiathèque d'exemple :
