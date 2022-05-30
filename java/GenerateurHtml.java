@@ -34,6 +34,8 @@ public class GenerateurHtml
 
 			// titre
 		pw.println ( "\t\t<h1>Liste des vidéos</h1>" );
+
+		pw.println ( "" );
 		
 		pw.println ( "\t\t<br>" );
 
@@ -41,6 +43,8 @@ public class GenerateurHtml
 
 		for (Video v : alVideo)
 		{
+			pw.println ( "" );
+
 			pw.println ( "\t\t<table>" );
 				
 			pw.println ( "\t\t\t<tr>" );
@@ -76,11 +80,12 @@ public class GenerateurHtml
 			pw.println ( "\t\t</table>" );
 		}
 
-		
-		
+		pw.println ( "" );
 
 			// espacement avec le pied de page
 		pw.println ( "\t\t<br style = \"line-height:100px;\">" );
+
+		pw.println ( "" );
 			
 			// pied de page avec prise en compte du singulier et pluriel
 		pw.println ( "\t\t<footer>" );
