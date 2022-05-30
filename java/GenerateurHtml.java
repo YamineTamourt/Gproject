@@ -67,7 +67,7 @@ public class GenerateurHtml
 			
 			pw.println ( "\t\t\t<tr>" );
 			
-			pw.println ( "\t\t\t\t<td>Decription : </td>" );
+			pw.println ( "\t\t\t\t<td>Description : </td>" );
 
 			pw.println ( "\t\t\t</tr>" );
 			
