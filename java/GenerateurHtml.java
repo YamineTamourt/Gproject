@@ -57,7 +57,7 @@ public class GenerateurHtml
 			
 			pw.println ( "\t\t\t<tr>" );
 			
-			pw.println ( "\t\t\t\t<td> Made by " + v.getAuteur()  +"                       " + v.getDate() + " </td>" );
+			pw.println ( "\t\t\t\t<td> Made by " + v.getAuteur()  +" on " + v.getDate() + " </td>" );
 			
 			pw.println ( "\t\t\t</tr>" );
 			
